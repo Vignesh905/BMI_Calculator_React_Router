@@ -1,38 +1,159 @@
-.App {
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f4f7;
+}
+
+/* Navigation */
+
+.navbar {
+  background: #222;
+  color: white;
+
+  padding: 15px 30px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+
+  margin-left: 20px;
+}
+
+/* Main container */
+
+.container {
+  min-height: 85vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+
+.card {
+  background: white;
+
+  width: 400px;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow:
+    0 5px 20px
+    rgba(0, 0, 0, 0.15);
+}
+
+.card h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Form */
+
+label {
+  display: block;
+
+  margin-top: 15px;
+  margin-bottom: 8px;
+
+  font-weight: bold;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input,
+select {
+
+  width: 100%;
+
+  padding: 12px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 6px;
+
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.input-group {
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  gap: 10px;
+}
+
+.input-group input {
+  flex: 2;
+}
+
+.input-group select {
+  flex: 1;
+}
+
+/* Button */
+
+button {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 20px;
+
+  border: none;
+
+  border-radius: 6px;
+
+  background: #333;
+
   color: white;
+
+  font-size: 16px;
+
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background: #555;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Error */
+
+.error {
+  color: red;
+}
+
+/* Home */
+
+.home {
+
+  flex-direction: column;
+
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 40px;
+}
+
+.home p {
+  font-size: 18px;
+}
+
+/* Result */
+
+.result {
+  text-align: center;
 }
